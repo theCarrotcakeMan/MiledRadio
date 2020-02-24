@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "MiledRadio",
+  "short_name": "MiledRadio",
+  "version": "com.miledRadio.app",
+  "description": "Mobile application for Mobile Radio Network",
+  "author": "John Falcon",
+  "icons": [],
+  "start_url": "index.html"
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+<!--        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="dist/css/bundle.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Miled Radio</title>
+    </head>
+    <body>
+        <div id="app">
+
+            <header class="bg-gray-300 shadow-md fixed left-0 top-0 w-full">
+                <label for="open_menu" title="Abrir menú principal" class="float-right lg:hidden text-2xl focus:text-purple-light mx-4 toggle-label select-none" id="mobileMenuTrigger">
+                    <i class="material-icons text-gray-500 text-4xl pt-2">menu</i>
+                </label>
+                <input id="open_menu" name="open_menu" class="toggle-input" type="checkbox" value="selected">
+                <nav id="mobileMainNavigation" class="overflow-hidden fixed z-40 md:hidden toggle-content left--full bg-white shadow-lg w-2/3 p-6 pt-12">
+                    <ul class="list-none w-full text-purple-text pd-0 mb-6">
+                        <li class="block leading-loose mt-6 mb-6 font-body font-hairline text-sm hover:text-purple-text">
+                            <a class="leading-relaxed" href="http://google.com/search?q=radio+miled"><i class="material-icons align-middle">public</i> Ir al sitio web</a>
+                        </li>
+                        <li class="block leading-loose mt-6 mb-6 font-body font-hairline text-sm hover:text-purple-text">
+                            <a class="leading-relaxed" onclick="window.navigator.app.exitApp()"><i class="material-icons align-middle">clear</i> Salir</a>
+                        </li>
+                    </ul>
+                </nav>
+                <label for="open_menu" class="overlay z-10 md:hidden md:invisible"></label>
+                <div class="clearfix"></div>
+            </header>
+
+            <section class="flex flex-wrap w-full mt-16 min-h-screen">
+
+                <feed-element
+                    stream-url="http://192.99.34.205:8068/stream.m3u8"
+                    label="Toluca,México 98.9 FM"
+                    cover="img/Toluca-Miled-mdpi.png"
+                    >
+                </feed-element>
+
+                <feed-element
+                    stream-url="http://192.99.34.205:8269/listen.pls"
+                    label="Atlacomulco,México 104.7 FM"
+                    cover="img/Atlacomulco-Miled-mdpi.png"
+                    >
+                </feed-element>
+
+                <feed-element
+                    stream-url="http://192.99.34.205:8485/stream"
+                    label="Valle de Bravo,México 104.7 FM"
+                    cover="img/Valle-de-Bravo-Miled-mdpi.png"
+                    >
+                </feed-element>
+
+                <feed-element
+                    stream-url="http://192.99.34.205:8612/stream"
+                    label="Tulancingo,México 104.7 FM"
+                    cover="img/Tulancingo-Miled-mdpi.png"
+                    >
+                </feed-element>
+
+                <feed-element
+                    stream-url="http://192.99.34.205:8104/stream"
+                    label="Guadalajara,México 1510 AM"
+                    cover="img/Guadalajara-Miled-mdpi.png"
+                    >
+                </feed-element>
+
+            </section>
+
+            <media-player
+                :initial-status="false"
+                >
+            </media-player>
+
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="dist/js/bundle.js"></script>
+    </body>
+</html>
