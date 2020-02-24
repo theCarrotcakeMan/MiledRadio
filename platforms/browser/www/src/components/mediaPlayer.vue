@@ -1,10 +1,10 @@
 <template id="media-player-template">
 
     <footer class="bg-gray-300 shadow-md fixed left-0 bottom-0 w-full p-4">
-        <nav class="flex justify-center">
-            <a href="#" v-show="paused" class="play text-gray-500"><i class="material-icons">play_arrow</i></a>
-            <a href="#" v-show="playing" class="pause text-gray-500"><i class="material-icons">pause</i></a>
-        </nav>
+<!--        <nav class="flex justify-center">-->
+<!--            <a href="#" v-show="paused" class="play text-gray-500"><i class="material-icons">play_arrow</i></a>-->
+<!--            <a href="#" v-show="playing" class="pause text-gray-500"><i class="material-icons">pause</i></a>-->
+<!--        </nav>-->
     </footer>
 
 </template>
@@ -56,18 +56,19 @@
 
             playAudio: function(payload) {
                 var vm = this;
-                var image_path = vm.$root.listDir(cordova.file.applicationDirectory + "www/");
+                // var image_path = vm.$root.listDir(cordova.file.applicationDirectory + "www/");
                 var cover_image = (undefined !== payload.cover) ? payload.cover : "Default-cover.png";
                 // Play an audio file with options (all options optional)
                 var options = {
-                    bgColor: "#006064",
-                    bgImage: image_path + cover_image,
+                    bgColor: "#3C3131",
+                    bgImage: payload.cover,
                     bgImageScale: "fit",
                     initFullscreen: false,
                     successCallback: vm.loadedFile,
                     errorCallback: vm.showError
                 };
                 console.log(JSON.stringify(options));
+                console.log(payload.url);
                 vm.streamingMedia.playAudio(payload.url, options);
 
                 console.log("Do you know someone named Francisco on the streets");
