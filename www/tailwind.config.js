@@ -3,10 +3,10 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                purple:{
-                    text: '#A7A9AB',
-                    dark: '#6A376B',
-                    light: '#E2D8E2'
+                grayoxford:{
+                    text: '#393d42',
+                    dark: '#393d42',
+                    light: '#c6c2bd'
                 }
             }
         },

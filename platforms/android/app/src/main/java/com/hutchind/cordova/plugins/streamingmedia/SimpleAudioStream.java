@@ -1,5 +1,6 @@
 package com.hutchind.cordova.plugins.streamingmedia;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.res.Configuration;
 import android.graphics.Color;
@@ -9,6 +10,7 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 import android.view.View;
@@ -16,6 +18,8 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.MediaController;
+
+import com.miledRadio.app.MainActivity;
 
 public class SimpleAudioStream extends Activity implements
 MediaPlayer.OnCompletionListener, MediaPlayer.OnPreparedListener,
@@ -28,12 +32,16 @@ MediaController.MediaPlayerControl {
 	private LinearLayout mAudioView;
 	private View mMediaControllerView;
 	private String mAudioUrl;
-	private Boolean mShouldAutoClose = true;
+	private Boolean mShouldAutoClose = false;
 
 	@Override
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
-		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+		// Here might ve the gold, or just a damn line...
+		// Intent myIntent = super.getParentActivityIntent();
+
+		//this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		Bundle b = getIntent().getExtras();
 		mAudioUrl = b.getString("mediaUrl");
 		String backgroundColor = b.getString("bgColor");
@@ -74,6 +82,11 @@ MediaController.MediaPlayerControl {
 		audioView.addView(mMediaControllerView);
 		setContentView(audioView, relLayoutParam);
 
+		// Display back button in action bar
+		ActionBar actionBar = getActionBar();
+		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setTitle("Escuchas Miled Radio");
+
 
 		// stop the screen from going to sleep. keepawake parameter from javascript. default is true.
 		mMediaControllerView.setKeepScreenOn(true);
@@ -113,6 +126,18 @@ MediaController.MediaPlayerControl {
 		} catch (Throwable t) {
 			Log.d(TAG, t.toString());
 		}
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem menuItem) {
+		switch (menuItem.getItemId()) {
+			case android.R.id.home:
+				moveTaskToBack(true);
+				Intent homeIntent = new Intent(this, MainActivity.class);
+				homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				startActivity(homeIntent);
+		}
+		return (super.onOptionsItemSelected(menuItem));
 	}
 
 	@Override
@@ -217,7 +242,8 @@ MediaController.MediaPlayerControl {
 		Intent intent = new Intent();
 		intent.putExtra("message", message);
 		setResult(resultCode, intent);
-		finish();
+		//moveTaskToBack(true);
+		 finish();
 	}
 
 

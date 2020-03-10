@@ -1,6 +1,6 @@
 <template id="media-player-template">
 
-    <footer class="bg-gray-300 shadow-md fixed left-0 bottom-0 w-full p-4">
+    <footer class="bg-gray-300 shadow-md fixed left-0 bottom-0 w-full h-0">
 <!--        <nav class="flex justify-center">-->
 <!--            <a href="#" v-show="paused" class="play text-gray-500"><i class="material-icons">play_arrow</i></a>-->
 <!--            <a href="#" v-show="playing" class="pause text-gray-500"><i class="material-icons">pause</i></a>-->
@@ -60,7 +60,7 @@
                 var cover_image = (undefined !== payload.cover) ? payload.cover : "Default-cover.png";
                 // Play an audio file with options (all options optional)
                 var options = {
-                    bgColor: "#3C3131",
+                    bgColor: "#393d42",
                     bgImage: payload.cover,
                     bgImageScale: "fit",
                     initFullscreen: false,

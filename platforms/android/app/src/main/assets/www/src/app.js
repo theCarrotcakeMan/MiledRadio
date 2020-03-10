@@ -10,6 +10,7 @@ import Vue from 'vue';
 
 import mediaPlayer from './components/mediaPlayer.vue';
 import feedElement from './components/feedElement.vue';
+import sideMenu from './components/sideMenu.vue';
 
 import VueResource from 'vue-resource';
 Vue.use(VueResource);
@@ -22,6 +23,7 @@ window._Event = new Vue();
 
 Vue.component('media-player', mediaPlayer);
 Vue.component('feed-element', feedElement);
+Vue.component('side-menu', sideMenu);
 
 var app = {
     // Application Constructor
