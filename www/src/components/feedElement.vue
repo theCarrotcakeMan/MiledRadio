@@ -2,7 +2,10 @@
 
     <article @click="triggerPlay(streamUrl, label, cover)" class="w-1/2 px-4 pt-4">
         <img :src="cover" :alt="label">
-        <h2 v-html="label" class="text-white text-base font-light leading-loose bg-gray-900 p-4"></h2>
+		<div class="relative bg-gray-900 p-4" style="min-height: 86px!important;">
+	        <h2 v-html="label" class="text-white text-sm font-light leading-loose" style="max-width: 80%;"></h2>
+			<span v-if="station" class="stationTag">{{station}}</span>
+		</div>
     </article>
 
 </template>
@@ -15,6 +18,10 @@
 
         props: {
             cover: {
+                type: String,
+                required: false
+            },
+            station: {
                 type: String,
                 required: false
             },

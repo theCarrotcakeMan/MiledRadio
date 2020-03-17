@@ -15,24 +15,24 @@
         <div id="app">
 
 			<!-- Header and side menu -->
-            <header class="bg-grayoxford-light shadow-md fixed left-0 top-0 w-full">
+            <header class="bg-grayoxford-light shadow-md fixed z-20 left-0 top-0 w-full">
                 <label for="open_menu" title="Abrir menú principal" class="float-right lg:hidden text-2xl focus:text-grayoxford-text mx-4 toggle-label select-none" id="mobileMenuTrigger">
                     <i class="material-icons text-grayoxford-text text-4xl pt-2">menu</i>
                 </label>
                 <input id="open_menu" name="open_menu" class="toggle-input" type="checkbox" value="selected">
-                <nav id="mobileMainNavigation" class="overflow-hidden fixed z-40 md:hidden toggle-content left--full bg-grayoxford-light shadow-lg w-2/3 p-6 pt-12">
+                <nav id="mobileMainNavigation" class="overflow-hidden fixed z-40 md:hidden toggle-content left--full bg-grayoxford-light shadow-lg w-3/4 p-6 pt-12">
                     <side-menu></side-menu>
                 </nav>
                 <label for="open_menu" class="overlay z-10 md:hidden md:invisible"></label>
                 <div class="clearfix"></div>
             </header>
 
-            <section class="flex flex-wrap w-full mt-16 min-h-screen">
+            <section class="flex flex-wrap w-full my-16 min-h-screen">
 
-				<!-- estream-url="https://192.99.34.205:8068/stream" -->
                 <feed-element
                     stream-url="https://stereotoluca.radioca.st/stream"
                     label="Toluca, México"
+                    station="98.9 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Toluca-MILED-mdpi.png"
                     >
                 </feed-element>
@@ -40,6 +40,7 @@
                 <feed-element
                     stream-url="https://stereoatlaco.radioca.st/stream"
                     label="Atlacomulco, México"
+                    station="104.7 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Atlacomulco-MILED-mdpi.png"
                     >
                 </feed-element>
@@ -47,6 +48,7 @@
                 <feed-element
 	                stream-url="https://stereovalle.radioca.st/stream"
 	                label="Valle de Bravo, México"
+                    station="93.5 FM"
 	                cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Valle-de-Bravo-MILED-mdpi.png"
 	                >
                 </feed-element>
@@ -54,6 +56,7 @@
 				<feed-element
 					stream-url="https://guadalajara.radioca.st/stream"
 					label="Guadalajara, Jalisco"
+                    station="1510 AM"
 					cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Guadalajara-MILED-mdpi.png"
 					>
 				</feed-element>
@@ -61,6 +64,7 @@
 				<feed-element
                     stream-url="https://stereotulancingo.radioca.st/stream"
                     label="Tulancingo, Hidalgo"
+                    station="97.1 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Tulancingo-MILED-mdpi.png"
                     >
                 </feed-element>
@@ -68,6 +72,7 @@
 				<feed-element
                     stream-url="https://sanluis.radioca.st/stream"
                     label="San Luis Potosí"
+                    station="620 AM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/San-Luis-Potosi-MILED-mdpi.png"
                     >
                 </feed-element>
@@ -75,6 +80,7 @@
 				<feed-element
                     stream-url="https://queretaro.radioca.st/stream"
                     label="Querétaro, Qro."
+                    station="103.1 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Queretaro-MILED-mdpi.png"
                     >
                 </feed-element>
@@ -82,6 +88,7 @@
 				<feed-element
                     stream-url="https://sanjuan.radioca.st/stream"
                     label="San Juan del Río, Qro."
+                    station="93.1 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/San-Juan-Del-Rio-MILED-mdpi.png"
                     >
                 </feed-element>
@@ -89,6 +96,7 @@
 				<feed-element
                     stream-url="https://zacatecas.radioca.st/stream"
                     label="Zacatecas"
+                    station="104.9 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Zacatecas-MILED-mdpi.png"
                     >
                 </feed-element>

@@ -11,89 +11,92 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Miled Radio</title>
     </head>
-    <body>
+    <body class="bg-grayoxford-dark">
         <div id="app">
 
-            <header class="bg-gray-300 shadow-md fixed left-0 top-0 w-full">
-                <label for="open_menu" title="Abrir menú principal" class="float-right lg:hidden text-2xl focus:text-purple-light mx-4 toggle-label select-none" id="mobileMenuTrigger">
-                    <i class="material-icons text-gray-500 text-4xl pt-2">menu</i>
+			<!-- Header and side menu -->
+            <header class="bg-grayoxford-light shadow-md fixed z-20 left-0 top-0 w-full">
+                <label for="open_menu" title="Abrir menú principal" class="float-right lg:hidden text-2xl focus:text-grayoxford-text mx-4 toggle-label select-none" id="mobileMenuTrigger">
+                    <i class="material-icons text-grayoxford-text text-4xl pt-2">menu</i>
                 </label>
                 <input id="open_menu" name="open_menu" class="toggle-input" type="checkbox" value="selected">
-                <nav id="mobileMainNavigation" class="overflow-hidden fixed z-40 md:hidden toggle-content left--full bg-white shadow-lg w-2/3 p-6 pt-12">
-                    <ul class="list-none w-full text-purple-text pd-0 mb-6">
-                        <li class="block leading-loose mt-6 mb-6 font-body font-hairline text-sm hover:text-purple-text">
-                            <a class="leading-relaxed" href="http://google.com/search?q=radio+miled"><i class="material-icons align-middle">public</i> Ir al sitio web</a>
-                        </li>
-                        <li class="block leading-loose mt-6 mb-6 font-body font-hairline text-sm hover:text-purple-text">
-                            <a class="leading-relaxed" onclick="window.navigator.app.exitApp()"><i class="material-icons align-middle">clear</i> Salir</a>
-                        </li>
-                    </ul>
+                <nav id="mobileMainNavigation" class="overflow-hidden fixed z-40 md:hidden toggle-content left--full bg-grayoxford-light shadow-lg w-3/4 p-6 pt-12">
+                    <side-menu></side-menu>
                 </nav>
                 <label for="open_menu" class="overlay z-10 md:hidden md:invisible"></label>
                 <div class="clearfix"></div>
             </header>
 
-            <section class="flex flex-wrap w-full mt-16 min-h-screen">
+            <section class="flex flex-wrap w-full my-16 min-h-screen">
 
                 <feed-element
-                    stream-url="https://192.99.34.205:8068/stream"
-                    label="Toluca"
+                    stream-url="https://stereotoluca.radioca.st/stream"
+                    label="Toluca, México"
+                    station="98.9 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Toluca-MILED-mdpi.png"
                     >
                 </feed-element>
 
                 <feed-element
-                    stream-url="https://192.99.34.205:8269/stream"
-                    label="Atlacomulco"
+                    stream-url="https://stereoatlaco.radioca.st/stream"
+                    label="Atlacomulco, México"
+                    station="104.7 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Atlacomulco-MILED-mdpi.png"
                     >
                 </feed-element>
 
                 <feed-element
-	                stream-url="https://192.99.34.205:8485/stream"
-	                label="Valle de Bravo"
+	                stream-url="https://stereovalle.radioca.st/stream"
+	                label="Valle de Bravo, México"
+                    station="93.5 FM"
 	                cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Valle-de-Bravo-MILED-mdpi.png"
 	                >
                 </feed-element>
 
 				<feed-element
-					stream-url="https://192.99.34.205:8104/stream"
-					label="Guadalajara"
+					stream-url="https://guadalajara.radioca.st/stream"
+					label="Guadalajara, Jalisco"
+                    station="1510 AM"
 					cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Guadalajara-MILED-mdpi.png"
 					>
 				</feed-element>
 
 				<feed-element
-                    stream-url="https://192.99.34.205:8612/stream"
-                    label="Tulancingo"
+                    stream-url="https://stereotulancingo.radioca.st/stream"
+                    label="Tulancingo, Hidalgo"
+                    station="97.1 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Tulancingo-MILED-mdpi.png"
                     >
                 </feed-element>
 
 				<feed-element
-                    stream-url="https://192.99.34.205:8612/stream"
+                    stream-url="https://sanluis.radioca.st/stream"
                     label="San Luis Potosí"
+                    station="620 AM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/San-Luis-Potosi-MILED-mdpi.png"
                     >
                 </feed-element>
 
 				<feed-element
-                    stream-url="null"
+                    stream-url="https://queretaro.radioca.st/stream"
                     label="Querétaro, Qro."
+                    station="103.1 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Queretaro-MILED-mdpi.png"
                     >
                 </feed-element>
 
 				<feed-element
-                    stream-url="null"
+                    stream-url="https://sanjuan.radioca.st/stream"
                     label="San Juan del Río, Qro."
+                    station="93.1 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/San-Juan-Del-Rio-MILED-mdpi.png"
                     >
                 </feed-element>
 
 				<feed-element
-                    stream-url="null"
+                    stream-url="https://zacatecas.radioca.st/stream"
                     label="Zacatecas"
+                    station="104.9 FM"
                     cover="https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Zacatecas-MILED-mdpi.png"
                     >
                 </feed-element>
@@ -101,6 +104,7 @@
 
             </section>
 
+			<!-- Media player Vue component -->
             <media-player
                 :initial-status="false"
                 >

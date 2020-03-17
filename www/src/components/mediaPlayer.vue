@@ -95,6 +95,9 @@
         computed: {
             paused: function(){
                 return !this.playing;
+            },
+            player_status: function(){
+                return this.playing ? 1 : 0;
             }
         }
 

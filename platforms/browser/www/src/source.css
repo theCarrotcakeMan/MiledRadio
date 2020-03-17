@@ -62,7 +62,7 @@ p{
     @apply font-thin mb-6;
 }
 .__inputBase{
-    @apply shadow appearance-none border border-gray-500 rounded w-full py-2 px-3 text-purple-text;
+    @apply shadow appearance-none border border-gray-500 rounded w-full py-2 px-3 text-grayoxford-text;
 }
 
 .__inputBase:focus {
@@ -173,6 +173,21 @@ label.overlay{
     /* .slide-fade-leave-active below version 2.1.8 */ {
     transform: translateX(10px);
     opacity: 0;
+}
+.stationTag{
+	display: block;
+	position: absolute;
+	top: 22%;
+	background-color: #1a202c !important;
+	color: #fff100;
+	right: 0;
+	left: auto;
+	font-size: 0.75rem;
+	padding: 2px;
+	width: 44px !important;
+	height: auto !important;
+	text-align: center;
+	line-height: 1rem;
 }
 
 @tailwind components;

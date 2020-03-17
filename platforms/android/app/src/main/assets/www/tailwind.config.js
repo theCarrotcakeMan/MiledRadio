@@ -6,7 +6,7 @@ module.exports = {
                 grayoxford:{
                     text: '#393d42',
                     dark: '#393d42',
-                    light: '#c6c2bd'
+                    light: '#e9e8e6'
                 }
             }
         },

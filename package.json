@@ -2,15 +2,18 @@
   "name": "com.miledradio.app",
   "displayName": "MiledRadio",
   "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "MiledMusic",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "cd www && npm run css",
+    "tail": "cd www && npm run tail",
+    "dev": "cd www && npm run dev",
+    "build": "cd www && npm run build"
   },
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
+  "author": "John Falcon for MiledMusic",
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",

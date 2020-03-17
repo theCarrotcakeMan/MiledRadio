@@ -2,31 +2,31 @@
 
 	<ul class="list-none w-full text-grayoxford-text pd-0 mb-6">
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
-			<a class="leading-relaxed inline-block" @click="emitPlayEvent('http://google.com/search?q=radio+miled', 'Toluca, México', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Toluca-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Toluca, México</a>
+			<a class="leading-relaxed inline-block" @click="emitPlayEvent('https://stereotoluca.radioca.st/stream', 'Toluca, México', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Toluca-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Toluca, México</a>
 		</li>
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
-			<a class="leading-relaxed inline-block" @click="emitPlayEvent('http://google.com/search?q=radio+miled', 'Atlacomulco, México', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Atlacomulco-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Atlacomulco, México</a>
+			<a class="leading-relaxed inline-block" @click="emitPlayEvent('https://stereoatlaco.radioca.st/stream', 'Atlacomulco, México', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Atlacomulco-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Atlacomulco, México</a>
 		</li>
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
-			<a class="leading-relaxed inline-block" @click="emitPlayEvent('http://google.com/search?q=radio+miled', 'Valle de Bravo, México', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Valle-de-Bravo-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Valle de Bravo, México</a>
+			<a class="leading-relaxed inline-block" @click="emitPlayEvent('https://stereovalle.radioca.st/stream', 'Valle de Bravo, México', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Valle-de-Bravo-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Valle de Bravo, México</a>
 		</li>
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
-			<a class="leading-relaxed inline-block" @click="emitPlayEvent('http://google.com/search?q=radio+miled', 'Guadalajara, Jalisco', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Guadalajara-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Guadalajara, Jalisco</a>
+			<a class="leading-relaxed inline-block" @click="emitPlayEvent('https://guadalajara.radioca.st/stream', 'Guadalajara, Jalisco', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Guadalajara-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Guadalajara, Jalisco</a>
 		</li>
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
-			<a class="leading-relaxed inline-block" @click="emitPlayEvent('http://google.com/search?q=radio+miled', 'Tulancingo, Hidalgo', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Tulancingo-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Tulancingo, Hidalgo</a>
+			<a class="leading-relaxed inline-block" @click="emitPlayEvent('https://stereotulancingo.radioca.st/stream', 'Tulancingo, Hidalgo', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Tulancingo-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Tulancingo, Hidalgo</a>
 		</li>
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
-			<a class="leading-relaxed inline-block" @click="emitPlayEvent('http://google.com/search?q=radio+miled', 'San Luis Potosi', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/San-Luis-Potosi-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> San Luis Potosi</a>
+			<a class="leading-relaxed inline-block" @click="emitPlayEvent('https://sanluis.radioca.st/stream', 'San Luis Potosi', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/San-Luis-Potosi-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> San Luis Potosi</a>
 		</li>
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
-			<a class="leading-relaxed inline-block" @click="emitPlayEvent('http://google.com/search?q=radio+miled', 'Querétaro, Qro.', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Queretaro-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Querétaro, Qro.</a>
+			<a class="leading-relaxed inline-block" @click="emitPlayEvent('https://queretaro.radioca.st/stream', 'Querétaro, Qro.', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Queretaro-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Querétaro, Qro.</a>
 		</li>
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
-			<a class="leading-relaxed inline-block" @click="emitPlayEvent('http://google.com/search?q=radio+miled', 'San Juan del Río, Qro.', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/San-Juan-Del-Rio-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> San Juan del Río, Qro.</a>
+			<a class="leading-relaxed inline-block" @click="emitPlayEvent('https://sanjuan.radioca.st/stream', 'San Juan del Río, Qro.', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/San-Juan-Del-Rio-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> San Juan del Río, Qro.</a>
 		</li>
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
-			<a class="leading-relaxed inline-block" @click="emitPlayEvent('http://google.com/search?q=radio+miled', 'Zacatecas', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Zacatecas-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Zacatecas</a>
+			<a class="leading-relaxed inline-block" @click="emitPlayEvent('https://zacatecas.radioca.st/stream', 'Zacatecas', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Zacatecas-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Zacatecas</a>
 		</li>
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
 			<a class="leading-relaxed inline-block" onclick="window.navigator.app.exitApp()"><i class="material-icons align-middle">clear</i> Salir</a>
