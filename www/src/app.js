@@ -48,8 +48,8 @@ var app = {
             methods: {
 
                 ajaxRequest: function( method, endpoint, data, contentType, includeHeaders, successCallback, errorCallback, eventName, cachedRequest ){
-
-                    _Event.$emit('loading-content', true);
+					console.log("started loading content");
+                    _Event.$emit('loading-content', {finished: false});
                     eventName   = eventName ? eventName : 'ajax-response-received';
                     var options = {};
                     options.responseType = 'json';
@@ -91,8 +91,10 @@ var app = {
                             if(typeof successCallback === 'function')
                                 return successCallback();
                             _Event.$emit(eventName, response.body);
+							_Event.$emit('loading-content', {finished: true});
                         }, response => {
                             _Event.$emit(eventName, response.body);
+							_Event.$emit('loading-content', {finished: true});
                             if(typeof errorCallback === 'function')
                                 return errorCallback();
                         })
@@ -244,7 +246,6 @@ var app = {
     // Do something onReceivedEvent
     receivedEvent: function(id) {
         console.log("Received event", id);
-
     }
 
 };

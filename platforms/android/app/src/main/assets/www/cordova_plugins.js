@@ -205,14 +205,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "navigator.splashscreen"
       ]
-    },
-    {
-      "id": "cordova-plugin-streaming-media.StreamingMedia",
-      "file": "plugins/cordova-plugin-streaming-media/www/StreamingMedia.js",
-      "pluginId": "cordova-plugin-streaming-media",
-      "clobbers": [
-        "streamingMedia"
-      ]
     }
   ];
   module.exports.metadata = {
@@ -221,7 +213,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-inappbrowser": "3.2.0",
     "cordova-plugin-media": "5.0.3",
     "cordova-plugin-splashscreen": "5.0.3",
-    "cordova-plugin-streaming-media": "2.2.0",
     "cordova-plugin-whitelist": "1.3.4"
   };
 });

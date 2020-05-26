@@ -231,14 +231,6 @@ module.exports = [
         "id": "cordova-plugin-splashscreen.SplashScreenProxy",
         "pluginId": "cordova-plugin-splashscreen",
         "runs": true
-    },
-    {
-        "file": "plugins/cordova-plugin-streaming-media/www/StreamingMedia.js",
-        "id": "cordova-plugin-streaming-media.StreamingMedia",
-        "pluginId": "cordova-plugin-streaming-media",
-        "clobbers": [
-            "streamingMedia"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -249,8 +241,7 @@ module.exports.metadata =
     "cordova-plugin-inappbrowser": "3.2.0",
     "cordova-plugin-media": "5.0.3",
     "cordova-plugin-splashscreen": "5.0.3",
-    "cordova-plugin-whitelist": "1.3.4",
-    "cordova-plugin-streaming-media": "2.2.0"
+    "cordova-plugin-whitelist": "1.3.4"
 }
 // BOTTOM OF METADATA
 });

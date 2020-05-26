@@ -22,9 +22,6 @@
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.miledRadio.app"
     },
-    "cordova-plugin-streaming-media": {
-      "PACKAGE_NAME": "com.miledRadio.app"
-    },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.miledRadio.app"
     }

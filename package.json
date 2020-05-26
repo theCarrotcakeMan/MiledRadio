@@ -25,7 +25,7 @@
     "cordova-plugin-inappbrowser": "^3.2.0",
     "cordova-plugin-media": "^5.0.3",
     "cordova-plugin-splashscreen": "^5.0.3",
-    "cordova-plugin-streaming-media": "git+https://github.com/nchutchind/cordova-plugin-streaming-media.git"
+    "ios-deploy": "^1.10.0"
   },
   "cordova": {
     "plugins": {
@@ -34,12 +34,10 @@
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-exclude-files": {},
-      "cordova-plugin-whitelist": {},
-      "cordova-plugin-streaming-media": {}
+      "cordova-plugin-whitelist": {}
     },
     "platforms": [
       "browser",
-      "ios",
       "android"
     ]
   },

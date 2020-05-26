@@ -1,8 +1,8 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "MiledRadio",
-  "short_name": "MiledRadio",
+  "name": "Stereo Miled",
+  "short_name": "Stereo Miled",
   "version": "com.miledRadio.app",
   "description": "Mobile application for Mobile Radio Network",
   "author": "John Falcon",

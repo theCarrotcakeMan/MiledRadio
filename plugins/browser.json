@@ -24,9 +24,6 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-streaming-media": {
-      "PACKAGE_NAME": "com.miledRadio.app"
     }
   },
   "dependent_plugins": {}

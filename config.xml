@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.miledRadio.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 
-    <name>MiledRadio</name>
+    <name>Radio Miled</name>
     <description>
         Mobile application for Mobile Radio Network
     </description>
@@ -49,6 +49,29 @@
         <splash density="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
         <splash density="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
     </platform>
+    <platform name="ios">
+		<preference name="applicationId" value="com.miledRadio.app"/>
+
+		<icon src="res/icon/ios/icon-57-2x.png" width="180" height="180" />
+		<icon src="res/icon/ios/icon-57.png" width="60" height="60" />
+		<icon src="res/icon/ios/icon-57-2x.png" width="120" height="120" />
+		<icon src="res/icon/ios/icon-72.png" width="76" height="76" />
+		<icon src="res/icon/ios/icon-72-2x.png" width="152" height="152" />
+		<icon src="res/icon/ios/icon-57.png" width="40" height="40" />
+		<icon src="res/icon/ios/icon-57-2x.png" width="80" height="80" />
+		<icon src="res/icon/ios/icon-57.png" width="57" height="57" />
+		<icon src="res/icon/ios/icon-72-2x.png" width="114" height="114" />
+		<icon src="res/icon/ios/icon-72.png" width="72" height="72" />
+		<icon src="res/icon/ios/icon-72-2x.png" width="144" height="144" />
+
+		<splash src="res/screen/ios/Default@2x~universal~anyany.png" />
+	    <splash src="res/screen/ios/Default@2x~universal~comany.png" />
+	    <splash src="res/screen/ios/Default@2x~universal~comcom.png" />
+	    <splash src="res/screen/ios/Default@3x~universal~anyany.png" />
+	    <splash src="res/screen/ios/Default@3x~universal~anycom.png" />
+	    <splash src="res/screen/ios/Default@3x~universal~comany.png" />
+    </platform>
+
     <platform name="browser">
         <splash density="land-hdpi" src="res/screen/android/screen-hdpi-landscape.png" />
         <splash density="land-ldpi" src="res/screen/android/screen-ldpi-landscape.png" />

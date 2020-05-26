@@ -14,21 +14,24 @@
     <body class="bg-grayoxford-dark">
         <div id="app">
 
-			<!-- Header and side menu -->
             <header class="bg-grayoxford-light shadow-md fixed z-20 left-0 top-0 w-full">
                 <label for="open_menu" title="Abrir menú principal" class="float-right lg:hidden text-2xl focus:text-grayoxford-text mx-4 toggle-label select-none" id="mobileMenuTrigger">
                     <i class="material-icons text-grayoxford-text text-4xl pt-2">menu</i>
                 </label>
                 <input id="open_menu" name="open_menu" class="toggle-input" type="checkbox" value="selected">
                 <nav id="mobileMainNavigation" class="overflow-hidden fixed z-40 md:hidden toggle-content left--full bg-grayoxford-light shadow-lg w-3/4 p-6 pt-12">
-                    <side-menu></side-menu>
-                </nav>
+
+					<!-- side menu Vue component -->
+				    <side-menu></side-menu>
+
+				</nav>
                 <label for="open_menu" class="overlay z-10 md:hidden md:invisible"></label>
                 <div class="clearfix"></div>
             </header>
 
             <section class="flex flex-wrap w-full my-16 min-h-screen">
 
+				<!-- Feed element Vue component -->
                 <feed-element
                     stream-url="https://stereotoluca.radioca.st/stream"
                     label="Toluca, México"
@@ -113,5 +116,6 @@
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="dist/js/bundle.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/css/slider.css">
     </body>
 </html>

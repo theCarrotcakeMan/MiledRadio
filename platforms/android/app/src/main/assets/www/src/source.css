@@ -47,6 +47,41 @@ Version: 1.0
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
+.social{
+
+}
+.social.facebook{
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	background: url('../../img/icons/Facebook.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.social.twitter{
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	background: url('../../img/icons/Twitter.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.social.phone{
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	background: url('../../img/icons/Telefono.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.social.webpage{
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	background: url('../../img/icons/Internet.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
 h1{
     @apply block font-bold text-3xl text-left w-full mb-10;
@@ -174,6 +209,15 @@ label.overlay{
     transform: translateX(10px);
     opacity: 0;
 }
+.fade-enter-active, .fade-leave-active {
+  	transition: opacity;
+  	left: 50vw;
+	transition: all .4s ease-in-out;
+}
+.fade-enter, .fade-leave-to {
+  	opacity: 0;
+	left: 0;
+}
 .stationTag{
 	display: block;
 	position: absolute;
@@ -189,7 +233,15 @@ label.overlay{
 	text-align: center;
 	line-height: 1rem;
 }
-
-@tailwind components;
+.stationTag_inline{
+	display: inline-block;
+	color: #fff100;
+	font-size: 1rem;
+	padding: 2px;
+	height: auto !important;
+	text-align: center;
+	line-height: 1rem;
+	vertical-align: middle;
+}
 
 @tailwind utilities;

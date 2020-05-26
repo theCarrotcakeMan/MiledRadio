@@ -22,7 +22,7 @@
   "homepage": "https://github.com/MusicForMyself/MiledApp#readme",
   "devDependencies": {
     "cross-env": "^6.0.3",
-    "css-loader": "^3.4.1",
+    "css-loader": "^3.4.2",
     "fsevents": "^2.1.2",
     "vue-loader": "^15.8.3",
     "vue-resource": "^1.5.1",
@@ -35,7 +35,8 @@
     "postcss-import": "^12.0.1",
     "sweetalert2": "^9.7.1",
     "tailwindcss": "^1.1.4",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-slider-component": "^3.1.1"
   },
   "vue": {
     "runtimeCompiler": true
