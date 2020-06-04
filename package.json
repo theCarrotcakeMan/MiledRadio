@@ -38,7 +38,8 @@
     },
     "platforms": [
       "browser",
-      "android"
+      "android",
+      "ios"
     ]
   },
   "devDependencies": {
