@@ -244,4 +244,12 @@ label.overlay{
 	vertical-align: middle;
 }
 
+.h_1_3{
+	height: 33.3vh;
+}
+.h_2_3{
+	height: 66.6vh;
+}
+
+
 @tailwind utilities;

@@ -15,15 +15,17 @@
 			<a class="text-lg text-grayoxford-dark inline-block" @click="closeControls"><span class="material-icons">arrow_back_ios</span></a>
 			<a class="inline-block align-text-bottom text-base font-medium leading-tight ml-4 w-4/5 text-center" @click="closeControls">Super Stereo Miled</a>
 		</header>
-		<article id="fullPlayerScreen" class="absolute w-full h-full p-6">
-			<img :src="coverUrl" :alt="stationLabel" class="block w-4/5 m-auto mt-16 mb-4">
-			<h3 class="inline-block mt-3 leading-loose text-lg text-center font-medium text-white">{{stationLabel}} <span class="stationTag_inline font-medium">{{stationAddr}}</span> </h3>
-			<footer class="shadow-md fixed left-0 bottom-0 w-full h-auto p-6">
-			   <nav id="stationLinks" class="block flex justify-center p-3">
-				   <a class="inline-block align-middle mr-3 mb-3 text-grayoxford-light" target="_blank" onclick="window.open('https://www.facebook.com/MiledMexico', '_blank', 'location=yes')" title="Síguenos en Facebook"><span class="social facebook"></span></a>
-				   <a class="inline-block align-middle mr-3 mb-3 text-grayoxford-light" target="_blank" onclick="window.open('https://www.twitter.com/noticiasmiled', '_blank', 'location=yes')" title="Síguenos en Twitter"><span class="social twitter"></span></a>
-				   <a class="inline-block align-middle mr-3 mb-3 text-grayoxford-light" target="_blank" onclick="window.open('https://miled.com', '_blank', 'location=yes')"><span class="social webpage"></span></a>
-				   <a class="inline-block align-middle mb-3 text-grayoxford-light" href="tel:+52 722 280 09 43"><span class="social phone"></span></a>
+		<article id="fullPlayerScreen" class="fixed w-full h-full p-6">
+			<div class="absolute left-0 top-0 w-full h_2_3 py-0">
+				<img :src="coverUrl" :alt="stationLabel" class="block w-4/5 m-auto mb-4" style="margin-top: 33%!important;">
+				<h3 class="inline-block mt-3 leading-loose text-lg text-center font-medium text-white">{{stationLabel}} <span class="stationTag_inline font-medium">{{stationAddr}}</span> </h3>
+			</div>
+			<footer class="absolute left-0 bottom-0 w-full h_1_3 p-6">
+			   <nav id="stationLinks" class="block flex justify-center px-3 py-6">
+				   <a class="inline-block align-middle mr-3 text-grayoxford-light" target="_blank" onclick="window.open('https://www.facebook.com/MiledMexico', '_blank', 'location=yes')" title="Síguenos en Facebook"><span class="social facebook"></span></a>
+				   <a class="inline-block align-middle mr-3 text-grayoxford-light" target="_blank" onclick="window.open('https://www.twitter.com/noticiasmiled', '_blank', 'location=yes')" title="Síguenos en Twitter"><span class="social twitter"></span></a>
+				   <a class="inline-block align-middle mr-3 text-grayoxford-light" target="_blank" onclick="window.open('https://miled.com', '_blank', 'location=yes')"><span class="social webpage"></span></a>
+				   <a class="inline-block align-middle text-grayoxford-light" href="tel:+52 722 280 09 43"><span class="social phone"></span></a>
 			   </nav>
 
 			   <nav class="flex justify-center">
