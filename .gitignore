@@ -14,3 +14,4 @@ platforms/browser
 # res
 resources/signing
 node_modules/*
+www/node_modules/*
