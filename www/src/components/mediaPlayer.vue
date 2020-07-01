@@ -104,14 +104,15 @@
 					vm.streamingMedia.stop();
 					vm.streamingMedia.release();
 				}
-
+				console.log("Imma here");
 				vm.coverUrl 	= payload.cover;
 				vm.stationLabel = payload.station_title;
 				vm.stationAddr 	= payload.station_addr;
 				vm.stationFb 	= payload.station_fb || 'https://www.facebook.com/MiledMexico';
 				vm.streamUrl 	= payload.url;
-				vm.playing 		= vm.showControls = true;
-				console.log("Statio FB", vm.stationFb);
+
+				vm.showControls = true;
+
 				vm.streamingMedia = new Media(vm.streamUrl, vm.loadedFile, vm.showError);
 				vm.streamingMedia.setVolume(vm.volume/10);
 				vm.streamingMedia.play({ playAudioWhenScreenIsLocked : true });
