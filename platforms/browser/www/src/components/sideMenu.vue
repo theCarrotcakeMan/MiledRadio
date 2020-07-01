@@ -51,6 +51,7 @@
         mounted: function(){
             /* Fet initial values from the urlVars */
             var vm = this;
+			console.log("Rendered side menu!");
 
         },
 

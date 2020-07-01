@@ -13,9 +13,6 @@
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.miledRadio.app"
     },
-    "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.miledRadio.app"
-    },
     "cordova-plugin-media": {
       "PACKAGE_NAME": "com.miledRadio.app"
     },
@@ -23,6 +20,12 @@
       "PACKAGE_NAME": "com.miledRadio.app"
     },
     "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.miledRadio.app"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.miledRadio.app"
+    },
+    "cordova-plugin-wkwebview-engine": {
       "PACKAGE_NAME": "com.miledRadio.app"
     }
   },

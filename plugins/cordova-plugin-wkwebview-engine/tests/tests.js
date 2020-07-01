@@ -1,4 +1,5 @@
 /*
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -15,6 +16,29 @@
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
+ *
 */
-var d = document.getElementById('header');
-d.innerHTML = 'Script file successfully injected';
+
+/* jshint jasmine: true */
+
+exports.defineAutoTests = function () {
+    describe('cordova-plugin-wkwebview-engine (cordova)', function () {
+        it("cordova-plugin-wkwebview-engine.spec.1 should exist", function () {
+            //expect(window).toBeDefined();
+        });
+    });
+};
+
+exports.defineManualTests = function (contentEl, createActionButton) {
+
+    contentEl.innerHTML = 'Your HTML instructions here';
+
+    createActionButton('Do something 1', function () {
+        // do something 1;
+    }, 'do-something-1');
+
+    createActionButton('Do something 2', function () {
+        // do something 2;
+    }, 'do-something-2');
+
+};

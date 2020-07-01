@@ -106,12 +106,13 @@
 					vm.streamingMedia.stop();
 					vm.streamingMedia.release();
 				}
-
+				console.log("Imma here");
 				vm.coverUrl 	= payload.cover;
 				vm.stationLabel = payload.station_title;
 				vm.stationAddr 	= payload.station_addr;
 				vm.streamUrl 	= payload.url;
-				vm.playing 		= vm.showControls = true;
+
+				vm.showControls = true;
 
 				vm.streamingMedia = new Media(vm.streamUrl, vm.loadedFile, vm.showError);
 				vm.streamingMedia.setVolume(vm.volume/10);
