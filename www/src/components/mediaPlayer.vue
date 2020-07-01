@@ -17,7 +17,7 @@
 		</header>
 		<article id="fullPlayerScreen" class="fixed w-full h-full p-6">
 			<div class="absolute left-0 top-0 w-full h_2_3 py-0">
-				<img :src="coverUrl" :alt="stationLabel" class="block w-4/5 m-auto mb-4" style="margin-top: 33%!important;">
+				<img :src="coverUrl" :alt="stationLabel" class="block m-auto mb-4" style="margin-top: 33%!important; max-height: 38vh; width: auto !important;">
 				<h3 class="inline-block mt-3 leading-loose text-lg text-center font-medium text-white">{{stationLabel}} <span class="stationTag_inline font-medium">{{stationAddr}}</span> </h3>
 			</div>
 			<footer class="absolute left-0 bottom-0 w-full h_1_3 p-6">
