@@ -17,7 +17,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",
-    "cordova-browser": "^5.0.4",
+    "cordova-browser": "^6.0.0",
     "cordova-ios": "^5.1.1",
     "cordova-plugin-android-support-v4": "^21.0.1",
     "cordova-plugin-exclude-files": "^1.0.0",
@@ -36,8 +36,8 @@
       "cordova-plugin-whitelist": {}
     },
     "platforms": [
-      "browser",
-      "android"
+      "android",
+      "browser"
     ]
   },
   "devDependencies": {
