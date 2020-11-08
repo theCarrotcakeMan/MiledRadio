@@ -117,7 +117,7 @@
 
 				vm.streamingMedia = new Media(vm.streamUrl, vm.loadedFile, vm.showError);
 				vm.streamingMedia.setVolume(vm.volume/10);
-				vm.streamingMedia.play();
+				vm.streamingMedia.play({ playAudioWhenScreenIsLocked : true });
 
             },
             loadedFile: function(){
@@ -125,10 +125,11 @@
 				this.loading = false;
             },
             showError: function(errorMessage){
-				console.log(errorMessage);
+				console.log("Media Error", errorMessage);
                 var error = "Hubo un problema al intentar reproducir la estación.";
                 if(undefined !== errorMessage)
                     error = "Error code: " + errorMessage.code;
+				this.loading = false;
                 // Swal.fire(
                 //     'Algo sucedió',
                 //     error,
