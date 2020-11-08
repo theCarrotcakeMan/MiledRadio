@@ -7,7 +7,7 @@
   "scripts": {
     "css": "cd www && npm run css",
     "tail": "cd www && npm run tail",
-    "dev": "cd www && npm run dev",
+    "debug": "cd www && npm run dev",
     "build": "cd www && npm run build"
   },
   "keywords": [
