@@ -251,5 +251,15 @@ label.overlay{
 	height: 66.6vh;
 }
 
+.vue-slider-dot{
+	width: 20px!important;
+	height: 20px!important;
+}
+.vue-slider.vue-slider-ltr{
+	height: 8px!important;
+}
+.vue-slider-process{
+	background-color: #fff100!important;
+}
 
 @tailwind utilities;
