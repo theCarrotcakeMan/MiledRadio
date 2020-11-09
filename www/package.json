@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/MusicForMyself/MiledApp#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^6.3.0",
     "cross-env": "^6.0.3",
     "css-loader": "^3.4.2",
     "vue-loader": "^15.8.3",
