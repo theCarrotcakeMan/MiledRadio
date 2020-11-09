@@ -28,6 +28,7 @@ module.exports = {
 		new CopyPlugin({
 	      patterns: [
 	        { from: 'node_modules/vue-slider-component/dist-css/vue-slider-component.css', to: '../css/slider.css' },
+	        { from: 'node_modules/vue-slider-component/theme/antd.css', to: '../css/slider-theme.css' },
 	      ],
     	}),
     ],
