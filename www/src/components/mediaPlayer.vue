@@ -22,7 +22,7 @@
 			</div>
 			<footer class="absolute left-0 bottom-0 w-full h_1_3 p-6">
 			   <nav id="stationLinks" class="block flex justify-center px-3 py-6">
-				   <a class="inline-block align-middle mr-3 text-grayoxford-light" target="_blank" onclick="window.open('https://www.facebook.com/MiledMexico', '_blank', 'location=yes')" title="Síguenos en Facebook"><span class="social facebook"></span></a>
+				   <a class="inline-block align-middle mr-3 text-grayoxford-light" target="_blank" v-on:click="openUrl(stationFb)" title="Síguenos en Facebook"><span class="social facebook"></span></a>
 				   <a class="inline-block align-middle mr-3 text-grayoxford-light" target="_blank" onclick="window.open('https://www.twitter.com/noticiasmiled', '_blank', 'location=yes')" title="Síguenos en Twitter"><span class="social twitter"></span></a>
 				   <a class="inline-block align-middle mr-3 text-grayoxford-light" target="_blank" onclick="window.open('https://miled.com', '_blank', 'location=yes')"><span class="social webpage"></span></a>
 				   <a class="inline-block align-middle text-grayoxford-light" href="tel:+52 722 280 09 43"><span class="social phone"></span></a>
@@ -73,6 +73,7 @@
                 streamUrl: null,
                 stationLabel: null,
                 stationAddr: null,
+                stationFb: null,
                 streamingMedia: null,
                 mediaObject: null,
                 volume: 5,
@@ -93,15 +94,10 @@
 
         },
 
-        mounted: function(){
-            /* Fet initial values from the urlVars */
-            var vm = this;
-        },
-
         methods: {
 
             playAudio: function(payload) {
-				console.log("play");
+				console.log("action: media.play > ");
                 var vm = this;
 
 				if(vm.playing && typeof vm.streamingMedia){
@@ -112,20 +108,21 @@
 				vm.coverUrl 	= payload.cover;
 				vm.stationLabel = payload.station_title;
 				vm.stationAddr 	= payload.station_addr;
+				vm.stationFb 	= payload.station_fb || 'https://www.facebook.com/MiledMexico';
 				vm.streamUrl 	= payload.url;
 				vm.playing 		= vm.showControls = true;
-
+				console.log("Statio FB", vm.stationFb);
 				vm.streamingMedia = new Media(vm.streamUrl, vm.loadedFile, vm.showError);
 				vm.streamingMedia.setVolume(vm.volume/10);
 				vm.streamingMedia.play({ playAudioWhenScreenIsLocked : true });
 
             },
             loadedFile: function(){
-				console.log("play:loaded file");
+				console.log("action: media.play > loaded file!");
 				this.loading = false;
             },
             showError: function(errorMessage){
-				console.log("Media Error", errorMessage);
+				console.log("media: Error", errorMessage);
                 var error = "Hubo un problema al intentar reproducir la estación.";
                 if(undefined !== errorMessage)
                     error = "Error code: " + errorMessage.code;
@@ -137,14 +134,14 @@
                 // );
             },
             closeControls: function(){
-				console.log("Closing controls");
+				console.log("action: media.play > Closing controls");
                 this.showControls = false;
             },
             reportStatus: function(statusCode){
                 console.log(statusCode);
             },
             resumeStream: function(){
-                console.log("Resume");
+                console.log("action: media.play > Resume");
 				this.playing = true;
 				this.streamingMedia.play();
             },
@@ -152,6 +149,9 @@
 				console.log("Pause");
 				this.playing = false;
 				this.streamingMedia.pause();
+            },
+            openUrl: function(url){
+				return window.open(url, '_blank', 'location=yes');
             }
 
         },
