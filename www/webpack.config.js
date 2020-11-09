@@ -1,4 +1,5 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -23,7 +24,12 @@ module.exports = {
     },
     plugins: [
         // make sure to include the plugin!
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+		new CopyPlugin({
+	      patterns: [
+	        { from: 'node_modules/vue-slider-component/dist-css/vue-slider-component.css', to: '../css/slider.css' },
+	      ],
+    	}),
     ],
     resolve: {
         alias: {
