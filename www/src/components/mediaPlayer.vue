@@ -13,7 +13,7 @@
 		</div>
 		<header class="fixed w-full p-3 bg-grayoxford-light top-0 left-0 shadow-md z-30">
 			<a class="text-lg text-grayoxford-dark inline-block" @click="closeControls"><span class="material-icons">arrow_back_ios</span></a>
-			<a class="inline-block align-text-bottom text-base font-medium leading-tight ml-4 w-4/5 text-center" @click="closeControls">Super Stereo Miled</a>
+			<a class="inline-block absolute align-text-bottom text-base font-medium leading-tight ml-4 w-3/4 pr-3 text-center" @click="closeControls"><span class="material-icons">home</span></a>
 		</header>
 		<article id="fullPlayerScreen" class="fixed w-full h-full p-6">
 			<div class="absolute left-0 top-0 w-full h_2_3 py-0">
