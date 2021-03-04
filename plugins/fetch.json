@@ -50,7 +50,7 @@
   "cordova-plugin-wkwebview-engine": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-wkwebview-engine"
+      "id": "cordova-plugin-wkwebview-engine@^1.2.1"
     },
     "is_top_level": true,
     "variables": {}
