@@ -77,7 +77,7 @@
                 streamingMedia: null,
                 mediaObject: null,
                 volume: 5,
-                playing: false,
+                playing: true,
                 showControls: false
             }
         },
@@ -91,7 +91,8 @@
 				console.log("loading... ",val);
                 vm.loading = !val.finished;
             } );
-
+			// Is this what triggers auto play?
+			// _Event.$emit('audio-event-received', dataObj);
         },
 
         methods: {
