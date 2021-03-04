@@ -17,20 +17,12 @@
  under the License.
  */
 
-#import <Cordova/CDVPlugin.h>
-#import <Cordova/CDVInvokedUrlCommand.h>
+#import <WebKit/WebKit.h>
 
-@interface CDVInAppBrowser : CDVPlugin {}
+@interface CDVWKWebViewUIDelegate : NSObject <WKUIDelegate>
 
-@property (nonatomic, assign) BOOL wkwebviewavailable;
-@property (nonatomic, assign) BOOL usewkwebview;
+@property (nonatomic, copy) NSString* title;
 
-- (void)open:(CDVInvokedUrlCommand*)command;
-- (void)close:(CDVInvokedUrlCommand*)command;
-- (void)injectScriptCode:(CDVInvokedUrlCommand*)command;
-- (void)show:(CDVInvokedUrlCommand*)command;
-- (void)hide:(CDVInvokedUrlCommand*)command;
-- (void)loadAfterBeforeload:(CDVInvokedUrlCommand*)command;
+- (instancetype)initWithTitle:(NSString*)title;
 
 @end
-

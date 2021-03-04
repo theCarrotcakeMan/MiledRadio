@@ -28,9 +28,6 @@
 		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
 			<a class="leading-relaxed inline-block w-full truncate" @click="emitPlayEvent('https://zacatecas.radioca.st/stream', '104.9 FM','Zacatecas', 'https://endeavour-one.s3-us-west-2.amazonaws.com/tmp/Zacatecas-MILED-mdpi.png')"><i class="material-icons align-middle">play_circle_outline</i> Zacatecas 104.9 FM</a>
 		</li>
-		<li class="block leading-loose mt-8 mb-8 font-body font-medium text-base hover:text-grayoxford-text">
-			<a class="leading-relaxed inline-block w-full truncate" onclick="window.navigator.app.exitApp()"><i class="material-icons align-middle">clear</i> Cerrar la applicación</a>
-		</li>
 	</ul>
 
 </template>

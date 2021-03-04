@@ -237,7 +237,7 @@ var app = {
         console.log("Device Ready");
         this.receivedEvent('deviceready');
 
-        if(null !== cordova && null !== cordova.InAppBrowser)
+        if(null !== cordova && 'undefined' !== typeof cordova.InAppBrowser)
             window.open = cordova.InAppBrowser.open;
 
         app.initializeVue();

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.miledRadio.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.miledRadio.app" version="1.5.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Radio Miled</name>
     <description>
         Mobile application for Mobile Radio Network
@@ -45,6 +45,11 @@
         <splash density="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
     </platform>
     <platform name="ios">
+        <preference name="WKWebViewOnly" value="true" />
+        <feature name="CDVWKWebViewEngine">
+            <param name="ios-package" value="CDVWKWebViewEngine" />
+        </feature>
+        <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
         <preference name="applicationId" value="com.miledRadio.app" />
         <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
         <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
@@ -81,8 +86,8 @@
         <splash density="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
         <splash density="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
     </platform>
+    <engine name="browser" spec="^5.0.4" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.3" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^3.2.0" />
     <plugin name="cordova-plugin-media" spec="^5.0.3" />
     <plugin name="cordova-plugin-file" spec="^6.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.4" />
